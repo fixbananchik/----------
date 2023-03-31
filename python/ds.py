@@ -4,4 +4,4 @@ def nine(n):
         v = str(n % 9) + v 
         n = n // 9
     return v
-n = int(input("Введите число n 9"))
+n = int(input("Введите число n "))
