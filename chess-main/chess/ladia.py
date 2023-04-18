@@ -1,7 +1,7 @@
 from get_coordinates import vertical, horizontal
 from convert_to_str import convert
 
-def bishop(coordinates):
+def ladia(coordinates):
     ver = vertical(coordinates)
     hor = horizontal(coordinates)
 
@@ -29,8 +29,8 @@ def bishop(coordinates):
     b_hor = hor
     b_ver = ver
 
-    while b_hor <= 7:
-        b_hor = b_hor - 1
+    while b_hor >= 7:
+        b_hor = b_hor + 1
         print(convert(b_ver, b_hor))
 
 

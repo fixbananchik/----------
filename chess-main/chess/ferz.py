@@ -1,7 +1,7 @@
 from get_coordinates import vertical, horizontal
 from convert_to_str import convert
 
-def kon(coordinates):
+def ferz(coordinates):
     ver = vertical(coordinates)
     hor = horizontal(coordinates)
 
@@ -10,63 +10,59 @@ def kon(coordinates):
 
     while b_hor > 0 and b_ver < 7:
         b_hor = b_hor - 1
-        b_ver = b_ver + 3
-        print(convert(b_ver, b_hor))
-
-    b_hor = hor
-    b_ver = ver
-
-    while b_hor > 0 and b_ver < 7:
-        b_hor = b_hor - 3
         b_ver = b_ver + 1
         print(convert(b_ver, b_hor))
 
     b_hor = hor
     b_ver = ver
 
-    while b_hor > 0 and b_ver > 0:
-        b_hor = b_hor - 3
+    while b_hor < 7 and b_ver < 7:
+        b_hor = b_hor + 1
+        b_ver = b_ver + 1
+        print(convert(b_ver, b_hor))
+
+    b_hor = hor
+    b_ver = ver
+
+    while b_hor < 7 and b_ver > 0:
+        b_hor = b_hor + 1
         b_ver = b_ver - 1
         print(convert(b_ver, b_hor))
 
     b_hor = hor
     b_ver = ver
 
-    while b_hor > 0 and b_ver > 0:
+    while b_hor < 0 and b_ver > 7:
         b_hor = b_hor - 1
-        b_ver = b_ver - 3
+        b_ver = b_ver + 1
         print(convert(b_ver, b_hor))
     
     b_hor = hor
     b_ver = ver
 
-    while b_hor < 7 and b_ver < 7:
-        b_hor = b_hor + 1
-        b_ver = b_ver + 3
-        print(convert(b_ver, b_hor))
-
-    b_hor = hor
-    b_ver = ver
-
-    while b_hor < 7 and b_ver < 7:
-        b_hor = b_hor + 3
+    while b_ver <= 7:
         b_ver = b_ver + 1
         print(convert(b_ver, b_hor))
 
     b_hor = hor
     b_ver = ver
 
-    while b_hor < 7 and b_ver > 0:
-        b_hor = b_hor + 3
+    while b_ver >= 0:
         b_ver = b_ver - 1
         print(convert(b_ver, b_hor))
 
     b_hor = hor
     b_ver = ver
 
-    while b_hor < 7 and b_ver > 0:
+    while b_hor <= 7:
         b_hor = b_hor + 1
-        b_ver = b_ver - 3
         print(convert(b_ver, b_hor))
-    
+        
+    b_hor = hor
+    b_ver = ver
+
+    while b_hor >=0:
+        b_hor = b_hor - 1
+        print(convert(b_ver, b_hor))
+
     print(coordinates)

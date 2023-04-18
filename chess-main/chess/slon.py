@@ -1,7 +1,7 @@
 from get_coordinates import vertical, horizontal
 from convert_to_str import convert
 
-def bishop(coordinates):
+def slon(coordinates):
     ver = vertical(coordinates)
     hor = horizontal(coordinates)
 
