@@ -6,4 +6,3 @@ from .korol import korol
 
 figura = input("Введите фигуру, которой хотите походить ")
 coordinates = input("Введиту координаты фигуры ")
-
