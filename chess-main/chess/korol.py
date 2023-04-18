@@ -29,5 +29,29 @@ def korol(coordinates):
     b_hor = b_hor + 1
     print(convert(b_ver, b_hor))
 
+    b_hor = hor
+    b_ver = ver
+
+    
+    b_hor = b_hor - 1
+    b_ver = b_ver + 1
+    print(convert(b_ver, b_hor))
+
+    b_hor = hor
+    b_ver = ver
+
+    
+    b_hor = b_hor + 1
+    b_ver = b_ver + 1
+    print(convert(b_ver, b_hor))
+
+    b_hor = hor
+    b_ver = ver
+
+    
+    b_hor = b_hor + 1
+    b_ver = b_ver - 1
+    print(convert(b_ver, b_hor))
+
     print(coordinates)
 

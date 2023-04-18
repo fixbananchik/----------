@@ -8,7 +8,7 @@ def kon(coordinates):
     b_hor = hor
     b_ver = ver
 
-    while b_hor > 0 and b_ver < 7:
+    if b_hor > 0 and b_ver < 7:
         b_hor = b_hor - 1
         b_ver = b_ver + 3
         print(convert(b_ver, b_hor))
@@ -16,7 +16,7 @@ def kon(coordinates):
     b_hor = hor
     b_ver = ver
 
-    while b_hor > 0 and b_ver < 7:
+    if b_hor > 0 and b_ver < 7:
         b_hor = b_hor - 3
         b_ver = b_ver + 1
         print(convert(b_ver, b_hor))
@@ -24,7 +24,7 @@ def kon(coordinates):
     b_hor = hor
     b_ver = ver
 
-    while b_hor > 0 and b_ver > 0:
+    if b_hor > 0 and b_ver > 0:
         b_hor = b_hor - 3
         b_ver = b_ver - 1
         print(convert(b_ver, b_hor))
@@ -32,7 +32,7 @@ def kon(coordinates):
     b_hor = hor
     b_ver = ver
 
-    while b_hor > 0 and b_ver > 0:
+    if b_hor > 0 and b_ver > 0:
         b_hor = b_hor - 1
         b_ver = b_ver - 3
         print(convert(b_ver, b_hor))
@@ -40,7 +40,7 @@ def kon(coordinates):
     b_hor = hor
     b_ver = ver
 
-    while b_hor < 7 and b_ver < 7:
+    if b_hor < 7 and b_ver < 7:
         b_hor = b_hor + 1
         b_ver = b_ver + 3
         print(convert(b_ver, b_hor))
@@ -48,7 +48,7 @@ def kon(coordinates):
     b_hor = hor
     b_ver = ver
 
-    while b_hor < 7 and b_ver < 7:
+    if b_hor < 7 and b_ver < 7:
         b_hor = b_hor + 3
         b_ver = b_ver + 1
         print(convert(b_ver, b_hor))
@@ -56,7 +56,7 @@ def kon(coordinates):
     b_hor = hor
     b_ver = ver
 
-    while b_hor < 7 and b_ver > 0:
+    if b_hor < 7 and b_ver > 0:
         b_hor = b_hor + 3
         b_ver = b_ver - 1
         print(convert(b_ver, b_hor))
@@ -64,7 +64,7 @@ def kon(coordinates):
     b_hor = hor
     b_ver = ver
 
-    while b_hor < 7 and b_ver > 0:
+    if b_hor < 7 and b_ver > 0:
         b_hor = b_hor + 1
         b_ver = b_ver - 3
         print(convert(b_ver, b_hor))
