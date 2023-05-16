@@ -9,10 +9,11 @@ class str_list:
     def __init__(self):
         self.head = None
 
-    def push(self, storka):
-        new_noda = noda(storka)
+    def push(self, storka, count):
+        new_noda = noda(storka, count)
         if self.head == None:
             self.head = new_noda
+            self.count = count
         else:
             current = self.head
             while current.link != None:
@@ -37,10 +38,10 @@ class str_list:
             index = 0
             current = self.head
             while current.link != None:
-                print(index, current.value)
+                print(index, current.value, current.count)
                 current = current.link
                 index = index + 1
-            print(current.value, current.count)
+            print(index, current.value, current.count)
 
     def find(self, element_name):
         if self.head == None:
@@ -67,5 +68,9 @@ smetana = noda("сметана", 3)
 luk = noda("лук", 4)
 
 Magazin = str_list()
+Magazin.push("хлеб", 2)
+Magazin.push("масло", 1)
+Magazin.push("сметана", 3)
+Magazin.push("лук", 4)
 
-Magazin.print
+Magazin.print()
