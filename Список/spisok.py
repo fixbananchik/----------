@@ -61,7 +61,7 @@ class str_list:
         i = self.head
         n = None
         c = None
-        while n != None:
+        while i.link != None:
             n = i.link
             c = n.link
             n.link = i
