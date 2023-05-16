@@ -57,17 +57,14 @@ class str_list:
             else:
                 return False
     def revers(self):
-        i = None
-        i = self.head
-        n = None
-        c = None
-        while i.link != None:
-            n = i.link
-            c = n.link
-            n.link = i
-            i = n
-            n = c
-        self.head = i
+        cur = self.head
+        prev = None
+
+        while cur.link != None:
+            prev = cur
+            cur = cur.link
+
+        
             
             
                 
