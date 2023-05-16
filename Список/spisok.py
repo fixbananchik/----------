@@ -56,14 +56,25 @@ class str_list:
                 return True
             else:
                 return False
+    def revers(self):
+        i = None
+        i = self.head
+        n = None
+        c = None
+        while n != None:
+            n = i.link
+            c = n.link
+            n.link = i
+            i = n
+            n = c
+        self.head = i
+            
+            
                 
             
 
 
 
-
-hleb = noda("хлеб", 2)
-maslo = noda("масло", 1)
 smetana = noda("сметана", 3)
 luk = noda("лук", 4)
 
@@ -72,5 +83,5 @@ Magazin.push("хлеб", 2)
 Magazin.push("масло", 1)
 Magazin.push("сметана", 3)
 Magazin.push("лук", 4)
-
+Magazin.revers()
 Magazin.print()
