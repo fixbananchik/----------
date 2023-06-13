@@ -60,25 +60,26 @@ class str_list:
         cur = self.head
         prev = None
 
-        while cur.link != None:
+        while cur:
+            next = cur.link
+            cur.link = prev
             prev = cur
-            cur = cur.link
+            cur = next
+        self.head = prev
 
         
             
             
-                
-            
-
-
 
 smetana = noda("сметана", 3)
 luk = noda("лук", 4)
 
 Magazin = str_list()
 Magazin.push("хлеб", 2)
+Magazin.push("лук", 4)
 Magazin.push("масло", 1)
 Magazin.push("сметана", 3)
-Magazin.push("лук", 4)
+Magazin.print()
+print("-------------------")
 Magazin.revers()
 Magazin.print()
